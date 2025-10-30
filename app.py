@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.secret_key = secrets.token_hex(32)
 
 # The secret flag - encoded in multiple layers
-FLAG = "vnr_w4rz0n3{pr0mp7_1nj3c710n_m4573r_n4ru70_uzum4k1}"
+FLAG = "w4rz0n3{pr0mp7_1nj3c710n_m4573r_n4ru70_uzum4k1}"
 
 # ULTRA SECRET BYPASS CONDITION
 # The only way to get the flag is to include this EXACT hidden pattern in the query
@@ -170,7 +170,7 @@ def is_prompt_injection(user_input):
         r'base64|rot13|encode|decode',
         r'translate.+(flag|secret)',
         r'convert.+(flag|secret)',
-        r'vnr_w4rz0n3',  # Block direct flag format mentions
+        r'w4rz0n3',  # Block direct flag format mentions
     ]
     
     user_lower = user_input.lower()
